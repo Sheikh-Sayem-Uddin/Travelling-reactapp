@@ -1,0 +1,899 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Dancing+Script:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('../src/assests/fonts/SEGOEUI.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.Nav-bar{
+background-color: transparent !important;
+font-family: 'Poppins', sans-serif  !important;  
+color: white;
+font-size: 13px;
+padding: 0px;
+font-weight: 500;
+z-index: 3;
+border-bottom: 1px solid #ffffff4d;
+}
+
+.nav-rightdiv{
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-end !important;
+  gap: 100px;
+}
+.nav-rightdiv {
+
+  color: white !important;
+}
+
+
+.top-navbar.scrolling .nav-rightdiv {
+  color: black !important; /* Change to black when scrolling */
+  transition: 0.5s ease-in-out;
+}
+.top-navbar.scrolling .nav-center .children-div li{
+  color: black !important;
+  transition: 0.5s ease-in-out;
+}
+.top-navbar.scrolling .nav-left .top-icon .icons1{
+  color: black !important;
+  transition: 0.5s ease-in-out;
+}
+.top-navbar.scrolling .nav-right .seacrh-input-div .search-input::placeholder{
+  color: black !important;
+  transition: 0.5s ease-in-out;
+}.top-navbar.scrolling .nav-right .seacrh-input-div .search-icon{
+  color: black !important;
+  transition: 0.5s ease-in-out;
+}
+
+.top-navbar.scrolling .nav-right p{
+  color: black !important;
+  transition: 0.5s ease-in-out;
+}
+.top-navbar.scrolling .nav-left .hamburger{
+  color: black !important;
+  transition: 0.5s ease-in-out;
+}
+.herosection{
+  width: 100%;
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+
+  
+  
+  object-fit: contain;
+}
+
+.video-tab {
+  position: relative !important;
+}
+
+.video-tab::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Black color with 40% opacity */
+  z-index: 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.countodown{
+  color: white !important;
+
+}
+.countdown-div{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+margin-top: 10%;
+
+  color: white !important;
+}
+.countdown-div div{
+  text-align: center;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+}
+#logo-text{
+  font-size: 32px;
+  /* font-family: 'Sansita Swashed', cursive; */
+  font-family: 'Dancing Script', cursive;
+}
+/* Countdown container */
+.countdown {
+
+  display: flex;
+flex-direction: column;
+  align-items: center;
+  font-size: 40px;
+  position: absolute;
+  top: 30%;
+  color: white;
+  font-family: 'Poppins', sans-serif  !important;  
+}
+.time-section{
+  display: flex;
+}
+.time{
+  transition: 0.5s ease-in-out;
+}
+.customnav {
+  position: fixed;
+  width: 100%;
+  background-color: #ffffff6e !important;
+  backdrop-filter: blur(1px);
+}
+.comingsoon{
+  text-align: center;
+margin-bottom: 0;
+color: white;
+
+
+font-size: 40px;
+font-family: 'Cormorant Garamond', serif;
+
+
+}
+.top-navbar {
+  background-color: transparent !important;
+  transition: background-color 0.3s ease !important;
+  /* Add other styles */
+}
+
+.top-navbar.scrolling {
+  background-color: white !important; /* Change to your desired color */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.5s ease-in-out !important;
+}
+
+
+  
+
+.dots{
+line-height: 110px;
+  font-size: 55px;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+
+/* Countdown item (days, hours, minutes, seconds) */
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+  font-weight: bold;
+  position: relative;
+  font-family: 'Noto Sans Old Permic', sans-serif;
+  position: relative;
+  z-index: 2;
+}
+
+/* Apply transitions to the numbers for a smooth effect */
+.countdown-item span {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+/* Add a class to fade out the number */
+.countdown-item.fade-out span {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Add a class to fade in the new number */
+.countdown-item.fade-in span {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+.date-heading{
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: white;
+  position: relative;
+  margin-bottom: 0;
+  z-index: 2;
+font-weight: 500;
+}
+.time{
+  font-size: 50px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: white;
+  position: relative;
+  z-index: 2;
+font-weight: 500;
+}
+.icon-box{
+  position: absolute;
+height: 200px;
+  top: 25%;
+  right: 0%;
+  gap: 20px;
+  color: #343232;
+  background-color: white;
+  padding: 12px;
+  z-index: 5;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.icons{
+  color: #343232;
+  cursor: pointer;
+}
+.icons:hover{
+  color: #ed8369;
+  transition: 0.5s ease-in-out;
+}
+.icons1{
+  cursor: pointer;
+}
+.icons1:hover{
+  color: #ed8369;
+  transition: 0.5s ease-in-out;
+}
+.video-section{
+  width: 100%;
+
+
+
+
+ 
+}
+.nav-center{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+.children-div li{
+display: inline;
+text-decoration: none;
+font-family: 'Poppins', sans-serif  !important;  
+color: white;
+font-weight: 300;
+font-size: 12px;
+cursor: pointer;
+
+}
+.search-input{
+  outline: none;
+}
+.icons1{
+  color: white;
+  font-weight: 300;
+}
+.search-input::placeholder{
+  font-family: 'Poppins', sans-serif  !important;  
+  color: white;
+  font-size: 12px;
+}
+.children-div {
+  /* Add margin or padding to create space between list items */
+  margin: 15px; /* You can adjust the value to control the spacing */
+  padding: 0;
+ width: 32%;
+ display: flex;
+ justify-content: space-between;
+}
+.search-input{
+  border: none;
+  background-color: transparent;
+}
+
+.children-div li {
+  /* Style the list items as needed */
+  list-style-type: none; /* Remove bullet points */
+}
+.customnav1{
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    height: 50px;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    z-index: 8;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-right{
+  width: 16%;
+}
+.quiz-section{
+  width: 100%;
+  
+  background: rgba(228, 191, 182, 0.1);
+  
+  margin-bottom: 20%;
+  margin-top: 20%;
+}
+.quiz-section h4{
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  text-align: center;
+  font-size: 30px;
+  width: 80%;
+  padding-top: 50px;
+  /* justify-content: center; */
+  margin: 0 auto;
+
+  padding-top: 50px;
+
+}
+
+
+
+.video-section h4{
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 35px;
+
+  padding-top: 50px;
+
+}
+.video-section p{
+  font-size: 20px;
+  color: #343434;
+  text-align: center;
+}
+
+.textdiv{
+  display: flex;
+  align-items: center;
+}
+.iframe-box{
+  width: 100% !important;
+  height: 100% !important;
+}
+.email-div{
+  display: flex;
+
+    /* justify-content: center; */
+
+    align-items: center;
+
+  padding-bottom: 20%;
+  margin-top: 5%;
+}
+.email-div div{
+  text-align: center;
+}
+.email-div input{
+  margin-top: 5%;
+  border: 1px solid #c6b7b7;
+  width: 80%;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ 
+}
+
+.Questions-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 600;
+  margin-top: 5%;
+}
+.next-button{
+
+  border: none;
+  background-color:#e4bfb6 ;
+  padding: 5px;
+
+  color: #343434;
+  font-size: 15px;
+  font-weight: 100;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  font-weight: 500;
+  cursor: pointer;
+}
+.next-button:hover{
+  transition: 0.5s ease-in-out;
+  background-color: #eba08e  !important;
+  color: white !important;
+}
+.radio-div{
+  display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.options-div{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 81%;
+}
+.next-btn-div{
+  display:flex;
+  justify-content: space-between;
+}
+.options-div label{
+  display: block;
+  width: 100%;
+
+}
+.options-div div{
+ cursor: pointer;
+  padding: 20px;
+  background-color: white;
+  margin-top: 5%;
+  width: 70%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.selected-label {
+color: green !important;
+background-color: #343434 !important;
+
+}
+.options-div .selected-option{
+  background-color: #eba08e
+  ;
+}
+.email-input{
+  border: none;
+  outline: none;
+ font-size: 12px;
+ padding: 5px;
+}
+.email-input ::placeholder{
+  font-size: 15px;
+}
+.mybar{
+  border-bottom: none;
+}
+.navbar-toggler {
+  border: none !important;
+}
+
+@media only screen and (max-width: 992px) {
+  .nav-rightdiv {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 40px;
+    
+  }
+  .options-div div{
+    width: 91% !important;
+  }
+}
+video{
+  width: 100%;
+}
+.down-heading{
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 2.6665em;
+
+}
+.down-text{
+  font-weight: 400 !important;
+  font-family: 'Montserrat', sans-serif; 
+}
+.more-button{
+  border: none;
+  background-color: #e4bfb6 ;
+  padding: 10px;
+cursor: pointer;
+  color: #343434;
+  font-size: 15px;
+margin-top: 5%;
+  padding-right: 40px;
+  padding-left: 40px;
+  margin-bottom: 5%;
+
+}
+.first-div{
+  margin-top: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.video-div{
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
+}
+.more-button:hover{
+  transition: 0.5s ease-in-out;
+  background-color: #eba08e  !important;
+  color: white !important;
+}
+.Submit-btn{
+  border: none;
+  background-color:#e4bfb6 ;
+  padding: 5px;
+
+  color: #343434;
+  font-size: 15px;
+  font-weight: 100;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  font-weight: 500;
+
+}
+.Submit-btn:hover{
+  transition: 0.5s ease-in-out;
+  background-color: #eba08e  !important;
+  color: white !important;
+}
+.thank-you-message{
+  text-align: center;
+  padding-bottom: 20px;
+}
+@media only screen and (max-width: 400px) {
+  .time{
+padding: 10px !important;
+    font-size: 12px !important;
+  }
+  .date-heading{
+    font-size: 8px !important;
+  }
+
+}
+@media only screen and (max-width: 740px) {
+  .time{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    font-size: 15px !important;
+  }
+  .countdown p {
+    font-size: 18px;
+  }
+  .date-heading{
+    font-size: 10px !important;
+  }
+
+
+  .countdown {
+
+    font-size: 20px;
+  }
+  .date-heading{
+    font-size: 13px;
+  }
+  .dots{
+    line-height: 70px;
+    font-size: 20px;
+  }
+  .time{
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .icon-box{
+    display: none;
+  }
+  #logo-text{
+    font-size: 35px !important;
+  }
+  
+
+}
+
+@media only screen and (max-width: 530px) {
+  .quiz-section h4{
+    width: 100%;
+  }
+  #logo-text{
+    font-size: 32px !important;
+  }
+  .customnav1{
+    height: 60px !important;
+  }
+  
+.footer-icons-sec{
+  display: flex;
+  flex-wrap: wrap !important;
+}
+  .Nav-bar img{
+    width: 120px;
+  }
+  .options-div div{
+    width: 91%;
+  }
+}
+.Footer-section{
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 8px;
+  background-color: #111111;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+.footer-icon-div:hover{
+  transition: 0.3s ease-in-out;
+  background-color: #eba08e ;
+  cursor: pointer;
+  color: white !important;
+}
+.icon-footer:hover{
+  transition: 0.3s ease-in-out;
+ color: white ;
+  cursor: pointer;
+}
+
+.footer-icons-sec{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  flex-wrap: wrap;
+  color: black;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+}
+.hrline{
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+  margin-top: 5%;
+}
+.footer-icon-div{
+  background-color: white;
+  width: 50px; /* Adjust the width and height as needed */
+  height: 50px;
+  text-align: center;
+  border-radius: 50%; /* This makes the div a circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  
+ 
+
+}
+.icon-footer{
+font-size: 25px;
+color: black;
+}
+.Companyname{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 2%;
+  color: white;
+}
+.pages-footer-links{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1%;
+}
+.pages-footer-links div{
+  font-size: 13px;
+  color: white;
+}
+.copyright-text{
+  font-size: 12px;
+  margin-top: 1%;
+  color: white;
+}
+.options-div div:hover{
+  background-color: #eba08e;
+  color: white;
+  transition: 0.5s ease-in-out;
+} 
+.nav-rightlist:hover{
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  color: #eba08e;
+  border-bottom: 2px solid #eba08e;
+
+}
+.back-button{
+  border: none;
+  background-color:#e4bfb6;
+  padding: 5px;
+
+  color: #343434;
+  font-size: 15px;
+  font-weight: 100;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  font-weight: 500;
+  cursor: pointer;
+}
+.back-button:hover{
+  transition: 0.5s ease-in-out;
+  background-color: #eba08e  !important;
+  color: white !important;
+}
+.navbar-toggler:focus {
+  box-shadow: unset;
+  outline: 0;
+  text-decoration: none;
+}
+.qr-box{
+  margin-bottom: 15%;
+}
+.top-icon{
+margin: 15px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav-left{
+  width: 15%;
+  
+}
+.search-input{width: 60%;}
+.seacrh-input-div{
+  width: 90%;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+}
+.search-icon{
+  margin-top: 2%;
+  font-size: 15px;
+  width: 10%;
+}
+@media only screen and (min-width: 800px) {
+.mobile-nav{
+  display: none;
+}
+
+}
+
+@media only screen and (max-width: 800px) {
+  .desktop-nav {
+    display: none;
+  }
+  .customnav1{
+    height: 70px;
+  }
+  #logo-text{
+    font-size: 40px;
+    margin-left: 20px;
+  }
+  .nav-right{
+    width: 50%;
+    margin-top: 0%;
+  }
+  .nav-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.hamburger{
+  font-size: 25px;
+}
+.icon-box{
+  position: fixed;
+}
+.video-tab {
+  position: relative;
+}
+
+.herosection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99% !important;
+  z-index: 3; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  pointer-events: none; /* Disable interactions on the overlay */
+}
+
+.recaptch-section{
+  display: flex;
+  justify-content: center;
+margin-top: 10%;
+}
+
+.label-div{
+  width: 80%;
+    margin: 0 auto;
+    /* display: flex; */
+
+    text-align: left !important;
+}
+.error-msg{
+  font-size: 12px;
+  margin-top: 5%;
+  color: red;
+}
+.question-main-div{
+  display: flex;
+  width: 100%;
+}
+.options-image{
+
+
+  width: 100%;
+  height: 250px;
+
+  
+}
+@media only screen and (max-width: 770px) {
+  .question-main-div{
+    display: flex;
+    flex-direction: column-reverse;
+  
+  }
+  .main-question{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-question p{
+    width: 100%;
+    text-align: left;
+  }
+  .options-div div{
+    width: 91% !important;
+  }
+  .options-image{
+    transform: rotate(0deg) !important;
+  
+  width: 91% !important;
+    height: 250px;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .option-img{
+    width: 80% !important;
+  }
+  
+  }
+  .options-image{
+    width: 350px;
+    display: flex;
+    justify-content: center;
+  }
