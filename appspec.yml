@@ -7,13 +7,9 @@ files:
 
 hooks:
   AfterInstall:
-    - location: scripts/install_dependencies.sh  # Install Nginx or Apache
+    - location: shellscripts/install_dependencies.sh  # Install Nginx or Apache
     - runas: root
 
   ApplicationStart:
-    - location: scripts/start_server.sh  # Start the server (e.g., Nginx)
-    - runas: root
-
-  ValidateService:
-    - location: scripts/validate.sh  # Optionally validate if the app is running
+    - location: shellscripts/start_server.sh  # Start the server (e.g., Nginx)
     - runas: root
