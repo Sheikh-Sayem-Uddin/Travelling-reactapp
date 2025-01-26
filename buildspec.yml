@@ -4,7 +4,7 @@ phases:
   install:
     commands:
       - echo "Installing Node.js and dependencies..."
-      - curl -sL https://rpm.nodesource.com/setup_22.13.1 | bash -  # Replace '16.x' with your desired Node.js version
+      - curl -sL https://rpm.nodesource.com/setup_22.x | bash -  # Replace '16.x' with your desired Node.js version
       - yum install -y nodejs
       - npm install
   pre_build:
