@@ -17,12 +17,10 @@ phases:
   post_build:
     commands:
       - echo "Copying build artifacts to S3 bucket..."
-      - cp appspec.yml build/
-      - cp -r scripts build/
 artifacts:
   files:
     - '**/*'  # Include all files
-   # - '../appspec.yml'
-   # - '../scripts/'
+    - '../appspec.yml'
+    - '../shellscripts/**'
   base-directory: build  # The build directory created by React
   discard-paths: no
