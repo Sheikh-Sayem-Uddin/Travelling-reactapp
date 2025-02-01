@@ -22,6 +22,6 @@ artifacts:
   files:
     - '**/*'  # Include all files
     - '../appspec.yml'
-    - '../scripts/**'
+    - '../scripts/'
   base-directory: build  # The build directory created by React
   discard-paths: no
