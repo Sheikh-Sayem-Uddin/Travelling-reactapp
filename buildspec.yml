@@ -17,9 +17,11 @@ phases:
   post_build:
     commands:
       - echo "Copying build artifacts to S3 bucket..."
-      - aws s3 cp build/ s3://travelreactapp-awscicd/build --recursive # Upload the build folder to the S3 bucket
 
 artifacts:
   files:
     - '**/*'  # Include all files
+    - '../appspec.yml'
+    - '../scripts/**'
   base-directory: build  # The build directory created by React
+  discard-paths: no
