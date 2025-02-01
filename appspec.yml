@@ -3,7 +3,7 @@ os: linux
 
 files:
   - source: /  # Copy everything from the root of the artifact
-    destination: /var/www/html  # The folder Nginx uses to serve static files
+    destination: /usr/share/index/  # The folder Nginx uses to serve static files
 
 hooks:
   AfterInstall:
