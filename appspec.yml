@@ -2,14 +2,16 @@ version: 0.0
 os: linux
 
 files:
-  - source: /  # Copy everything from the root of the artifact
-    destination: /usr/share/index/  # The folder Nginx uses to serve static files
+  - source: /build # Copy everything from the root of the artifact
+    destination: /usr/share/nginx/html/  # The folder Nginx uses to serve static files
 
 hooks:
-  AfterInstall:
-    - location: shellscripts/install_dependencies.sh  # Install Nginx or Apache
-    - runas: root
+  #AfterInstall:
+    #- location: shellscripts/install_dependencies.sh  # Install Nginx or Apache
+   # - runas: root
+# bcz i already installed nginx on my instance
 
   ApplicationStart:
     - location: shellscripts/start_server.sh  # Start the server (e.g., Nginx)
-    - runas: root
+      timeout: 300
+      runas: root
